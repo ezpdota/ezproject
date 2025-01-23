@@ -360,11 +360,10 @@ th {
 /* Responsive styles */
 @media (max-width: 768px) {
     .navbar {
-        flex-direction: column;
-        gap: 15px;
         justify-content: space-between; /* Сохраняем распределение */
         padding: 10px 15px; /* Уменьшенные отступы */
     }
+
 
     .main-content {
         flex-direction: column;
