@@ -431,4 +431,8 @@ th {
     .contacts-header {
         font-size: 20px; /* Уменьшить размер заголовка */
     }
+    .game-image {
+        display: none; /* Скрыть картинку */
+    }
+
 }
