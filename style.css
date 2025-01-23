@@ -381,6 +381,22 @@ th {
     th, td {
         padding: 8px;
     }
+    .game-image {
+        display: none; /* Скрыть картинку */
+    }
+
+    .contacts {
+        padding: 20px; /* Уменьшить отступы */
+    }
+
+    .contacts-info {
+        flex-direction: column; /* Разместить контакты в колонку */
+        gap: 10px; /* Уменьшить расстояние между контактами */
+    }
+
+    .contacts-info span {
+        text-align: center; /* Выравнивание текста по центру */
+    }
 }
 
 @media (max-width: 480px) {
@@ -407,5 +423,12 @@ th {
 
     th, td {
         padding: 6px;
+    }
+    .contacts-info span {
+        font-size: 14px; /* Уменьшить размер шрифта для мобильных устройств */
+    }
+
+    .contacts-header {
+        font-size: 20px; /* Уменьшить размер заголовка */
     }
 }
