@@ -8,26 +8,26 @@
     <link rel="icon" type="image/png" href="logo.png" />
 </head>
 <body>
-    <nav class="navbar">
-        <!-- Левая часть меню -->
-        <ul class="nav-list left-nav">
-            <li><a href="index.html" class="nav-item">Главная</a></li>
-            <li><a href="test.html" class="nav-item">Матчи</a></li>
-        </ul>
-    
-        <!-- Логотип -->
-        <a class="logo">
-            <img class="scale" src="logo.png" alt="Логотип" />
-        </a>
-    
-        <!-- Правая часть меню -->
-        <ul class="nav-list right-nav">
-            <li><a href="info.html" class="nav-item">Таблица</a></li>
-            <li><a href="https://forms.gle/kWZv94eQrwpwsVsq5" class="nav-item">Регистрация</a></li>
-        </ul>
-        <button class="mobile-menu-button">&#9776;</button>
-    </nav>
-    
+    <header class="site-header">
+        <nav class="navbar">
+            <!-- Левая часть меню -->
+            <ul class="nav-list left-nav">
+                <li><a href="index.html" class="nav-item">Главная</a></li>
+                <li><a href="test.html" class="nav-item">Матчи</a></li>
+            </ul>
+
+            <!-- Логотип -->
+            <a class="logo">
+                <img class="scale" src="logo.png" alt="Логотип" />
+            </a>
+
+            <!-- Правая часть меню -->
+            <ul class="nav-list right-nav">
+                <li><a href="info.html" class="nav-item">Таблица</a></li>
+                <li><a href="https://forms.gle/kWZv94eQrwpwsVsq5" class="nav-item">Регистрация</a></li>
+            </ul>
+        </nav>
+    </header>
     
     <!-- ГЛАВНАЯ ЧАСТЬ -->
     <main class="main-content">
@@ -56,17 +56,5 @@
             <span>Discord: <a href="https://discord.gg/7DfFUgUsfy">https://discord.gg/7DfFUgUsfy</a></span>
         </div>
     </section>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const navbar = document.querySelector('.navbar');
-            const mobileMenuButton = document.querySelector('.mobile-menu-button');
-    
-            mobileMenuButton.addEventListener('click', () => {
-                navbar.classList.toggle('expanded');
-            });
-        });
-    </script>
-    
 </body>
 </html>
