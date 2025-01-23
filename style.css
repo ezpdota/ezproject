@@ -12,21 +12,20 @@ body {
 
 .navbar {
     display: flex;
-    align-items: center; /* Центрируем элементы по вертикали */
-    justify-content: space-between; /* Распределяем элементы */
-    gap: 10px; /* Расстояние между секциями */
-    flex-wrap: nowrap; /* Запрещаем перенос элементов */
-    overflow-x: auto; /* Горизонтальная прокрутка для маленьких экранов */
+    align-items: center;
+    justify-content: space-between; /* Распределяем элементы равномерно */
+    gap: 10px;
     padding: 10px;
+    flex-wrap: nowrap; /* Запрещаем перенос строк */
 }
 
 .nav-list {
-        display: flex;
-        gap: 15px;
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        flex-wrap: nowrap; /* Запрещаем перенос */
+    display: flex;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    flex-wrap: nowrap;
 }
 
 .left-nav {
@@ -40,11 +39,11 @@ body {
 .nav-item {
     text-decoration: none;
     color: white;
-    font-size: 18px;
-    padding: 10px 15px;
+    font-size: 16px;
+    padding: 8px 12px; /* Уменьшаем отступы */
     border-radius: 5px;
     transition: background-color 0.3s ease;
-    white-space: nowrap; /* Предотвращаем перенос текста */
+    white-space: nowrap;
 }
 
 .nav-item:hover {
@@ -52,8 +51,8 @@ body {
 }
 
 .logo img {
-    height: 50px;
-    flex-shrink: 0; /* Логотип не сжимается */
+    height: 40px; /* Уменьшаем размер логотипа */
+    flex-shrink: 0; /* Запрещаем сжатие логотипа */
 }
 
 /* Main section */
@@ -359,11 +358,6 @@ th {
 }
 /* Responsive styles */
 @media (max-width: 768px) {
-    .navbar {
-        justify-content: space-between; /* Сохраняем распределение */
-        padding: 10px 15px; /* Уменьшенные отступы */
-    }
-
     .main-content {
         flex-direction: column;
         gap: 15px;
@@ -400,21 +394,21 @@ th {
     .contacts-info span {
         text-align: center; /* Выравнивание текста по центру */
     }
+    .navbar {
+        gap: 5px; /* Уменьшаем промежутки между секциями */
+    }
+
     .nav-item {
-        font-size: 14px; /* Уменьшаем шрифт для маленьких экранов */
-        padding: 8px 10px;
+        font-size: 14px; /* Уменьшаем размер текста */
+        padding: 6px 8px; /* Уменьшаем внутренние отступы */
     }
 
     .logo img {
-        height: 40px; /* Уменьшенный логотип */
+        height: 35px; /* Ещё уменьшаем логотип */
     }
 }
 
 @media (max-width: 480px) {
-    .navbar {
-        align-items: center;
-    }
-
     .nav-item {
         font-size: 14px;
         padding: 8px 10px;
@@ -445,5 +439,17 @@ th {
     .game-image {
         display: none; /* Скрыть картинку */
     }
+    .navbar {
+        gap: 3px;
+        padding: 5px;
+    }
 
+    .nav-item {
+        font-size: 12px;
+        padding: 4px 6px;
+    }
+
+    .logo img {
+        height: 30px;
+    }
 }
