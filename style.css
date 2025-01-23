@@ -364,7 +364,6 @@ th {
         padding: 10px 15px; /* Уменьшенные отступы */
     }
 
-
     .main-content {
         flex-direction: column;
         gap: 15px;
