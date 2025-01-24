@@ -1,17 +1,3 @@
-// 2. Обнаружение попыток XSS
-document.addEventListener("DOMContentLoaded", () => {
-    const originalInnerHTML = document.body.innerHTML;
-
-    const observer = new MutationObserver(() => {
-        if (document.body.innerHTML !== originalInnerHTML) {
-            alert("Обнаружена попытка внедрения скрипта!");
-        }
-    });
-
-    observer.observe(document.body, { childList: true, subtree: true });
-});
-
-// 3. Ограничение выполнения вредоносного кода
 document.addEventListener("DOMContentLoaded", () => {
     const originalEval = window.eval;
     window.eval = function () {
@@ -29,7 +15,6 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 });
 
-// 4. Защита от кликовых атак (Clickjacking)
 if (window.top !== window.self) {
     window.top.location = window.self.location;
 }
